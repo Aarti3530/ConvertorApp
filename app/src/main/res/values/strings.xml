@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Convert</string>
+    <string name="convertor">Convertor</string>
+    <string name="money">Money</string>
+    <string name="length">Length</string>
+    <string name="speed">Speed</string>
+    <string name="volume">Volume</string>
+    <string name="temperature">Temperature</string>
+    <string name="WEIGHT">Weight</string>
+    <string name="TIME">Time</string>
+    <string name="AREA">Area</string>
+    <string name="CALCULATOR">Calculator</string>
+    <string name="MASS">Mass</string>
+    <string name="DATASIZE">Data</string>
+    <string name="ASCII">ASCII</string>
+</resources>
