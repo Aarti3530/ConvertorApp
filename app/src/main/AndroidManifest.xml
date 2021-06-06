@@ -10,7 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Convert">
         <activity android:name=".Speed"></activity>
-        <activity android:name=".MainScreen" />
+        <activity android:name=".MainScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".Temperature" />
         <activity android:name=".Mass" />
         <activity android:name=".Data" />
@@ -23,11 +30,7 @@
         <activity android:name=".ASCII" />
         <activity android:name=".Area" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
