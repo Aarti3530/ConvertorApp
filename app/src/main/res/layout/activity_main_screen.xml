@@ -7,193 +7,74 @@
     android:layout_height="match_parent"
     tools:context=".MainScreen">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="229dp"
         android:layout_height="54dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="68dp"
         android:fontFamily="@font/one"
         android:gravity="center"
         android:text="@string/convertor"
         android:textAppearance="@style/TextStyle"
         android:textColor="#262626"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/money"
-        android:layout_width="100dp"
+        android:layout_width="300dp"
         android:layout_height="100dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/one"
         android:text="@string/money"
         android:textAppearance="@style/TextStyle"
         android:textColor="#262626"
-        app:layout_constraintBottom_toBottomOf="@+id/length"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/length"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/length"
-        android:layout_marginTop="200dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="@string/length"
-        android:fontFamily="@font/one"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintBottom_toBottomOf="@+id/speed"
-        app:layout_constraintEnd_toStartOf="@+id/speed"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toEndOf="@+id/money"
-        app:layout_constraintTop_toTopOf="@+id/speed"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/speed"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:fontFamily="@font/one"
-        android:text="@string/speed"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/volume"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/one"
-        android:text="@string/volume"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="@+id/money"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/money"
-        app:layout_constraintTop_toBottomOf="@+id/money" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/temperature"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/one"
-        android:text="@string/temperature"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="@+id/length"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/length"
-        app:layout_constraintTop_toBottomOf="@+id/length" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/weight"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/one"
-        android:text="@string/WEIGHT"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="@+id/speed"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/speed"
-        app:layout_constraintTop_toBottomOf="@+id/speed" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/time"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/one"
-        android:text="@string/TIME"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="@+id/volume"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/volume"
-        app:layout_constraintTop_toBottomOf="@+id/volume" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/area"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/one"
-        android:text="@string/AREA"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="@+id/temperature"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/temperature"
-        app:layout_constraintTop_toBottomOf="@+id/temperature" />
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/calsi"
-        android:layout_width="100dp"
+        android:layout_width="300dp"
         android:layout_height="100dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/one"
         android:text="@string/CALCULATOR"
         android:textAppearance="@style/TextStyle"
         android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="@+id/weight"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/weight"
-        app:layout_constraintTop_toBottomOf="@+id/weight" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/mass"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/one"
-        android:text="@string/MASS"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="@+id/time"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/time"
-        app:layout_constraintTop_toBottomOf="@+id/time" />
+        app:layout_constraintEnd_toEndOf="@+id/money"
+        app:layout_constraintStart_toStartOf="@+id/money"
+        app:layout_constraintTop_toBottomOf="@+id/money" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/datasize"
-        android:layout_width="100dp"
+        android:layout_width="300dp"
         android:layout_height="100dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/one"
         android:text="@string/DATASIZE"
-        android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        app:layout_constraintEnd_toEndOf="@+id/area"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/area"
-        app:layout_constraintTop_toBottomOf="@+id/area" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/ascii"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/one"
-        android:text="@string/ASCII"
         android:textAppearance="@style/TextStyle"
         android:textColor="#262626"
         app:layout_constraintEnd_toEndOf="@+id/calsi"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/calsi"
         app:layout_constraintTop_toBottomOf="@+id/calsi" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ascii"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/one"
+        android:text="@string/ASCII"
+        android:textAppearance="@style/TextStyle"
+        android:textColor="#262626"
+        app:layout_constraintEnd_toEndOf="@+id/datasize"
+        app:layout_constraintStart_toStartOf="@+id/datasize"
+        app:layout_constraintTop_toBottomOf="@+id/datasize" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
