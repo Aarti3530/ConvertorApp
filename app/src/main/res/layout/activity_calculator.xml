@@ -8,11 +8,19 @@
     android:layout_height="match_parent"
     android:background="@drawable/wewe">
 
-    <TextView
+    <EditText
         android:id="@+id/pannel"
+        android:numeric="integer"
+        android:hint="Calculate"
+        android:textSize="25dp"
         android:layout_width="350dp"
         android:layout_height="80dp"
+        android:textColorHint="#262626"
+        android:fontFamily="@font/one"
+        android:textAppearance="@style/TextStyle"
+        android:textColor="#262626"
         android:layout_marginTop="80dp"
+        android:textAlignment="center"
         android:background="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
@@ -25,6 +33,7 @@
         android:layout_height="75dp"
         android:fontFamily="@font/one"
         android:text="9"
+        android:textSize="30sp"
         android:textAppearance="@style/TextStyle"
         android:textColor="#262626"
         app:layout_constraintEnd_toStartOf="@+id/num8"
@@ -34,6 +43,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/num8"
+        android:textSize="30sp"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginTop="52dp"
@@ -47,6 +57,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/num7"
+        android:textSize="30sp"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginTop="52dp"
@@ -60,6 +71,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/num6"
+        android:textSize="30sp"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginTop="40dp"
@@ -75,6 +87,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/num5"
         android:layout_width="75dp"
+        android:textSize="30sp"
         android:layout_height="75dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/one"
@@ -89,6 +102,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/num4"
         android:layout_width="75dp"
+        android:textSize="30sp"
         android:layout_height="75dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/one"
@@ -103,6 +117,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/num3"
         android:layout_width="75dp"
+        android:textSize="30sp"
         android:layout_height="75dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/one"
@@ -117,6 +132,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/num2"
         android:layout_width="75dp"
+        android:textSize="30sp"
         android:layout_height="75dp"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/one"
@@ -135,19 +151,21 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/one"
         android:text="1"
+        android:textSize="30sp"
         android:textAppearance="@style/TextStyle"
         android:textColor="#262626"
         app:layout_constraintStart_toStartOf="@+id/num7"
         app:layout_constraintTop_toBottomOf="@+id/num4" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/C"
         android:layout_width="80dp"
         android:layout_height="67dp"
         android:layout_marginEnd="28dp"
         android:background="@drawable/circular"
         android:fontFamily="@font/one"
         android:text="C"
+        android:textSize="30sp"
         android:textAppearance="@style/TextStyle"
         android:textColor="#262626"
         app:layout_constraintBottom_toBottomOf="@+id/num7"
@@ -156,7 +174,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton2"
+        android:id="@+id/add"
         android:layout_width="80dp"
         android:layout_height="67dp"
         android:layout_marginStart="12dp"
@@ -167,12 +185,13 @@
         android:textColor="#262626"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/num4"
-        app:layout_constraintEnd_toEndOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="@+id/C"
         app:layout_constraintStart_toEndOf="@+id/num4"
         app:layout_constraintTop_toTopOf="@+id/num4"
         app:layout_constraintVertical_bias="0.625" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/sub"
         android:layout_width="80dp"
         android:layout_height="67dp"
         android:background="@drawable/circular"
@@ -182,9 +201,74 @@
         android:textColor="#262626"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/num1"
-        app:layout_constraintEnd_toEndOf="@+id/materialButton2"
-        app:layout_constraintStart_toStartOf="@+id/materialButton2"
+        app:layout_constraintEnd_toEndOf="@+id/add"
+        app:layout_constraintStart_toStartOf="@+id/add"
         app:layout_constraintTop_toTopOf="@+id/num1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mul"
+        android:layout_width="80dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circular"
+        android:fontFamily="@font/one"
+        android:text="x"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextStyle"
+        android:textColor="#262626"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/num0"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="@+id/num3"
+        app:layout_constraintTop_toBottomOf="@+id/num3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/num0"
+        android:layout_width="80dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circular"
+        android:fontFamily="@font/one"
+        android:text="0"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextStyle"
+        android:textColor="#262626"
+        app:layout_constraintBottom_toBottomOf="@+id/mul"
+        app:layout_constraintStart_toStartOf="@+id/num2"
+        app:layout_constraintTop_toBottomOf="@+id/num2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/div"
+        android:layout_width="80dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/circular"
+        android:fontFamily="@font/one"
+        android:text="/"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextStyle"
+        android:textColor="#262626"
+        app:layout_constraintBottom_toBottomOf="@+id/num0"
+        app:layout_constraintStart_toStartOf="@+id/num1"
+        app:layout_constraintTop_toBottomOf="@+id/num1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/equal"
+        android:text="="
+        android:textSize="30dp"
+        android:fontFamily="@font/one"
+        android:textAppearance="@style/TextStyle"
+        android:textColor="#262626"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
