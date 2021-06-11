@@ -5,6 +5,39 @@
     android:layout_width="match_parent"
     android:background="@drawable/wewe"
     android:layout_height="match_parent"
-    tools:context=".Area">
+    tools:context=".Money">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/one"
+        android:hint="Enter Currency in Rupee"
+        android:textAppearance="@style/TextStyle"
+        android:textColorHint="#262626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/money"
+            android:inputType="number"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:background="@color/teal_200"
+            android:fontFamily="@font/one"
+            android:textAppearance="@style/TextStyle"
+            android:textColor="#262626"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
