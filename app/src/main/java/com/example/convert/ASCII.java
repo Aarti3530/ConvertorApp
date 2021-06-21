@@ -43,15 +43,7 @@ public class ASCII extends AppCompatActivity {
             }
 
             private void digitAscii(int ch) {
-                if(ch == 0){
-                    text.setText(""+48);
-                    return;
-                }
-                while(ch >= 0){
-                    int d = ch % 10;
-                    text.setText(d+48+"");
-                    ch = ch/10;
-                }
+                text.setText(ch+48+"");
             }
 
         });

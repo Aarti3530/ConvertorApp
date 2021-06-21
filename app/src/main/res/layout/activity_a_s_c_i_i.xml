@@ -13,7 +13,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/one"
-        android:hint="Enter Single character"
+        android:hint="Enter Single character or only digits"
         android:textAppearance="@style/TextStyle"
         android:textColorHint="#262626"
         app:layout_constraintBottom_toBottomOf="parent"
