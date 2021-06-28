@@ -8,5 +8,69 @@
     android:layout_height="match_parent"
     tools:context=".Data">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/one"
+        android:hint="Enter number of bites"
+        android:textAppearance="@style/TextStyle"
+        android:textColorHint="#262626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/byttetext"
+            android:inputType="number"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:background="@color/teal_200"
+            android:fontFamily="@font/one"
+            android:textAppearance="@style/TextStyle"
+            android:textColor="#262626"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bytte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:fontFamily="@font/one"
+        android:hint="Enter"
+        android:textAppearance="@style/TextStyle"
+        android:textColorHint="#262626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clearbites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/teal_200"
+        android:fontFamily="@font/one"
+        android:hint="Clear"
+        android:textAppearance="@style/TextStyle"
+        android:textColorHint="#262626"
+        app:layout_constraintBottom_toBottomOf="@+id/bytte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toEndOf="@+id/bytte"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
