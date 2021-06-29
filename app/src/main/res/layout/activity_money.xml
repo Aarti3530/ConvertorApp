@@ -37,20 +37,35 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/textView2"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/teal_200"
         android:fontFamily="@font/one"
-        android:text="To"
+        android:hint="Convert"
         android:textAppearance="@style/TextStyle"
-        android:textColor="#262626"
-        android:textSize="30sp"
+        android:textColorHint="#262626"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintVertical_bias="0.097" />
+        app:layout_constraintVertical_bias="0.092" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:fontFamily="@font/one"
+        android:hint="Clear"
+        android:textAppearance="@style/TextStyle"
+        android:textColorHint="#262626"
+        app:layout_constraintBottom_toBottomOf="@+id/convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/convert"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
